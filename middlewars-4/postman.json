@@ -1,0 +1,299 @@
+{
+	"info": {
+		"_postman_id": "8f61bc2e-28bc-46ea-a6c2-f4a1d8c56002",
+		"name": "middleware Brachi Columbus",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50110536",
+		"_collection_link": "https://brachacolumbus-379327.postman.co/workspace/eb9dfdc0-2b27-407b-8060-2991dd8f11cc/collection/50110536-8f61bc2e-28bc-46ea-a6c2-f4a1d8c56002?action=share&source=collection_link&creator=50110536"
+	},
+	"item": [
+		{
+			"name": "new game",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/gamer/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"gamer",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "guess number",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"number\":50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/gamer/guess",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"gamer",
+						"guess"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "manager login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"bracha\",\r\n    \"password\":215803453\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/manager/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"manager",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateminandmax",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYnJhY2hhIiwic3RhdHVzIjoibWFuYWdlciIsImlhdCI6MTc2MzMyMzA5OSwiZXhwIjoxNzYzMzI2Njk5fQ.frLPZv0gF8s7g8_vlS8hUGrUTKa-iiw0NON95vnRk98",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYnJhY2hhIiwic3RhdHVzIjoibWFuYWdlciIsImlhdCI6MTc2MzMyMzA5OSwiZXhwIjoxNzYzMzI2Njk5fQ.frLPZv0gF8s7g8_vlS8hUGrUTKa-iiw0NON95vnRk98",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"min\":30,\r\n    \"max\":50\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/manager/setminandmax",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"manager",
+						"setminandmax"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "set win number",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYnJhY2hhIiwic3RhdHVzIjoibWFuYWdlciIsImlhdCI6MTc2MzMyMzA5OSwiZXhwIjoxNzYzMzI2Njk5fQ.frLPZv0gF8s7g8_vlS8hUGrUTKa-iiw0NON95vnRk98",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"winnumber\":27\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/manager/setwinnumber",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"manager",
+						"setwinnumber"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "guess a worng number",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYnJhY2hhIiwic3RhdHVzIjoibWFuYWdlciIsImlhdCI6MTc2MzMyODQwMSwiZXhwIjoxNzYzMzMyMDAxfQ.7F0wQca1hnyxswRwdUc2dZPxlrWbxZNC63eh6ZzGIb8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"number\":3\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/gamer/guess",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"gamer",
+						"guess"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "guess correct number",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"min\":20,\r\n    \"max\":60\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/manager/setminandmax",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"manager",
+						"setminandmax"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "try post with missing token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"min\":20,\r\n    \"max\":60\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/manager/setwinnumber",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"manager",
+						"setwinnumber"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "req whith error",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"number\":5kjhfk\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/gamer/guess",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"gamer",
+						"guess"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
