@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",        /* ודא שמשתמשים במערכת מודולים המתאימה ל-Node.js */
+    "target": "ES2020",          /* או גרסה מודרנית אחרת */
+    "esModuleInterop": true,     /* מאפשר ייבוא מודולים CommonJS כברירת מחדל */
+    "strict": true,              /* אופציונלי: מומלץ לאכיפת בדיקות טיפוסים קפדניות */
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
