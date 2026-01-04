@@ -1,0 +1,329 @@
+{
+	"info": {
+		"_postman_id": "f7732f1d-d728-46e6-8f90-643b72895ba0",
+		"name": "project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50110536",
+		"_collection_link": "https://brachacolumbus-379327.postman.co/workspace/brachacolumbus's-Workspace~eb9dfdc0-2b27-407b-8060-2991dd8f11cc/collection/50110536-f7732f1d-d728-46e6-8f90-643b72895ba0?action=share&source=collection_link&creator=50110536"
+	},
+	"item": [
+		{
+			"name": "add student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"11111111\",\r\n    \"name\":\"bela\",\r\n    \"email\":\"bela@gmail.com\",\r\n    \"password\":\"123bela\",\r\n    \"role\":\"student\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add student2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"22222222\",\r\n    \"name\":\"shir\",\r\n    \"email\":\"shir@gmail.com\",\r\n    \"password\":\"123shir\",\r\n    \"role\":\"student\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add teacher",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"33333333\",\r\n    \"name\":\"batya\",\r\n    \"email\":\"batya@gmail.com\",\r\n    \"password\":\"123batya\",\r\n    \"role\":\"teacher\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add teacher 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"55555555\",\r\n    \"name\":\"alice\",\r\n    \"email\":\"alice@gmail.com\",\r\n    \"password\":\"123alice\",\r\n    \"role\":\"teacher\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add assigment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTUxNTZlZTk1MDM0ZDFiMDliNTU2Y2UiLCJyb2xlIjoidGVhY2hlciIsImlhdCI6MTc2Njk0MTI1NiwiZXhwIjoxNzY2OTQ0ODU2fQ.iLvKIzfO-Sam30tcxs3xiALPP-NeysHOb59YMt_QfCk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTUxNTZlZTk1MDM0ZDFiMDliNTU2Y2UiLCJpYXQiOjE3NjY5Mzg5OTQsImV4cCI6MTc2Njk0MjU5NH0.DcOFp7DWwLgrsLnD_mo3S-JfIS8F-fN6CuXdbTBKidE\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"title\":\"our first exe\",\r\n    \"description\": \"פיתרי את שלושתהתרגילים בעמוד 5 \",\r\n    \"dueDate\": \"2026-01-05\",\r\n    \"creatDate\":\"2025-12-28\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/teacher/assignments/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"teacher",
+						"assignments",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "teacher login",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "shir login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTUxNTZlZTk1MDM0ZDFiMDliNTU2Y2UiLCJyb2xlIjoidGVhY2hlciIsImlhdCI6MTc2Njk0MTI1NiwiZXhwIjoxNzY2OTQ0ODU2fQ.iLvKIzfO-Sam30tcxs3xiALPP-NeysHOb59YMt_QfCk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTUxNTZlZTk1MDM0ZDFiMDliNTU2Y2UiLCJpYXQiOjE3NjY5Mzg5OTQsImV4cCI6MTc2Njk0MjU5NH0.DcOFp7DWwLgrsLnD_mo3S-JfIS8F-fN6CuXdbTBKidE\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"shir@gmail.com\",\r\n  \"name\": \"shir\",\r\n  \"password\": \"123shir\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "shir submit",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "bela submit",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "show open assigment",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "bela subbmissions",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTUxNTQ3MmEwNzFiNWRjZDlmZWIyNDUiLCJyb2xlIjoic3R1ZGVudCIsImlhdCI6MTc2Njk0MzU5MiwiZXhwIjoxNzY2OTQ3MTkyfQ.m-FTCLfeIxn6LaGIohCm8I0y3i7IBXfkXroDlqgg3X0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/student/subbmissions/my",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"student",
+						"subbmissions",
+						"my"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "set grade for shir's submission",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "bela log in",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "set grade for bela's submission",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "see avg",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
